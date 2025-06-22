@@ -34,7 +34,7 @@ A RESTful Flask API backend for managing late night show episodes, guests, and t
        source venv/bin/activate   # On Windows use `venv\Scripts\activate`
  ```
 
-3. Install dependencies
+3.  Install dependencies
       ```
       pip install -r requirements.txt
 ```
