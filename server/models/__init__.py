@@ -1,4 +1,8 @@
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
+
 from .user import User
-from .guest import Guest
+from .show import Show
 from .episode import Episode
-from .appearance import Appearance
+from .guest import Guest
