@@ -28,35 +28,43 @@ A RESTful Flask API backend for managing late night show episodes, guests, and t
    cd late-night-show-api
 ```
 
-2. Create and activate a virtual environment
-       ```bash
-  python3 -m venv venv
+2. Create and activate a virtual environment  
+```bash
+python3 -m venv venv
 source venv/bin/activate   # On Windows use `venv\Scripts\activate`
 ```
 
-3.  Install dependencies
-      ```
-      pip install -r requirements.txt
-   ```
+
+3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
 
 4. Configure environment variables
 
-Create a .env file with your database URL and JWT secret key:
-      ```bash
-      DATABASE_URL=postgresql://username:password@localhost:5432/your_db
-      JWT_SECRET_KEY=your_jwt_secret
-   ```
+Create a `.env` file in the root directory and add the following:
 
-5. Initialize the database
-      ```
-      flask db upgrade
+
+5. Run database migrations
+
+Initialize and apply migrations to create the database schema:
+
+```bash
+flask db init
+flask db migrate -m "Initial migration."
+flask db upgrade
 ```
 
-6. Run the server
+6. Run the application
 
-      ```bash
-      flask run
-   ```
+Start the Flask development server:
+
+```bash
+flask run
+```
+
 
 # API Endpoints
 ## Authentication
