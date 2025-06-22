@@ -35,14 +35,14 @@ A RESTful Flask API backend for managing late night show episodes, guests, and t
  ```
 
 3.  Install dependencies
-      ```
+      ```bash
       pip install -r requirements.txt
 ```
 
 4. Configure environment variables
 
 Create a .env file with your database URL and JWT secret key:
-      ```
+      ```bash
       DATABASE_URL=postgresql://username:password@localhost:5432/your_db
       JWT_SECRET_KEY=your_jwt_secret
 ```
@@ -54,7 +54,7 @@ Create a .env file with your database URL and JWT secret key:
 
 6. Run the server
 
-      ```
+      ```bash
       flask run
 ```
 
