@@ -24,7 +24,7 @@ A RESTful Flask API backend for managing late night show episodes, guests, and t
 
 1. Clone the repository  
    ```bash
-   git clone <repo_url>
+   git clone git@github.com:Kiago-prog/python-p4-iam-putting-it-all-together-lab.git
    cd late-night-show-api
 ```
 
@@ -35,27 +35,27 @@ A RESTful Flask API backend for managing late night show episodes, guests, and t
  ```
 
 3. Install dependencies
-
-
-```
-pip install -r requirements.txt
+      ```
+      pip install -r requirements.txt
 ```
 
 4. Configure environment variables
+
 Create a .env file with your database URL and JWT secret key:
-```
-DATABASE_URL=postgresql://username:password@localhost:5432/your_db
-JWT_SECRET_KEY=your_jwt_secret
+      ```
+      DATABASE_URL=postgresql://username:password@localhost:5432/your_db
+      JWT_SECRET_KEY=your_jwt_secret
 ```
 
 5. Initialize the database
-```
-flask db upgrade
+      ```
+      flask db upgrade
 ```
 
 6. Run the server
-```
-flask run
+
+      ```
+      flask run
 ```
 
 # API Endpoints
