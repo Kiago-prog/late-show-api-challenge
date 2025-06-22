@@ -28,10 +28,11 @@ A RESTful Flask API backend for managing late night show episodes, guests, and t
    cd late-night-show-api
 ```
 
-2. Create and activate a virtual environment  
+2. Clone the repository
+
 ```bash
-python3 -m venv venv
-source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+git clone <repository-url>
+cd <repository-folder>
 ```
 
 
